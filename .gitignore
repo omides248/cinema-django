@@ -161,6 +161,7 @@ bh_unicode_properties.cache
 # Sublime-github package stores a github token in this file
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
-static_assets/static_root
-
+static_assets/*
+films/migrations
+base/migrations
 # End of https://www.gitignore.io/api/python,django,sublimetext
