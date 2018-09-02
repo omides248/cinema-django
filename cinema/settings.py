@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # App custom
     'base',
     'films',
+    'djrichtextfield',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cinema.wsgi.application'
 
+
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//tinymce.cachefly.net/4.1/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': False,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat',
+        'width': 700
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -130,3 +142,5 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "static_root")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "media_root")
+
+
