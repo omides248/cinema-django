@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import locale
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,8 +26,10 @@ SECRET_KEY = 'yo*vwqcxw9cc-f+&2uu%h7-v3+(b#$m!z%pjl_uo+77#c^80-i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, "locale")
+]
 
 # Application definition
 
@@ -38,10 +41,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
+    # Libarary
+    'ckeditor',
+    'phonenumber_field',
+    'django_jalali',
+
+
+
     # App custom
     'base',
-    'films',
-    'djrichtextfield',
+    'movies',
+    'customers',
+    'screening',
+
 ]
 
 MIDDLEWARE = [
@@ -119,9 +132,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa-ir' # en-us fa-ir
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
 
@@ -129,12 +142,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+locale.setlocale(locale.LC_ALL, "fa_IR")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets")
@@ -142,5 +159,3 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "static_root")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "media_root")
-
-

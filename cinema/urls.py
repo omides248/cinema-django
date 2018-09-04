@@ -21,7 +21,6 @@ from django.conf.urls.static import static
 urlpatterns = [
 	re_path(r'^', include('base.urls')),
     re_path(r'^admin/', admin.site.urls),
-    path('djrichtextfield/', include('djrichtextfield.urls')),
 ]
 
 
