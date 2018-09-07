@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-07 17:51+0430\n"
+"POT-Creation-Date: 2018-09-07 18:22+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,11 +102,11 @@ msgstr ""
 msgid "length"
 msgstr "طول فیلم"
 
-#: movies/models.py:58
+#: movies/models.py:58 movies/models.py:65
 msgid "director"
 msgstr "کارگردان"
 
-#: movies/models.py:59
+#: movies/models.py:59 movies/models.py:66
 msgid "producer"
 msgstr "تهیه کننده"
 
@@ -114,7 +114,7 @@ msgstr "تهیه کننده"
 msgid "actor"
 msgstr "بازیگران"
 
-#: movies/models.py:61
+#: movies/models.py:61 movies/models.py:67
 msgid "writer"
 msgstr "نویسنده"
 

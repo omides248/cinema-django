@@ -62,9 +62,9 @@ class Movie(models.Model):
 	release_date		 	= jmodels.jDateField(default=jdatetime.date.today, verbose_name=_("release_date"))
 	timestamp 				= jmodels.jDateTimeField(verbose_name=_("timestamp"))
 	genres 					= models.ManyToManyField(Genre, verbose_name=_("genres"))
-	director 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_director")
-	producer 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_producer")
-	writer 					= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_writer")
+	director 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_director", verbose_name=_("director"))
+	producer 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_producer", verbose_name=_("producer"))
+	writer 					= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_writer", verbose_name=_("writer"))
 
 
 	def __str__(self):

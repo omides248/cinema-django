@@ -165,3 +165,6 @@ static_assets/*
 films/migrations
 base/migrations
 # End of https://www.gitignore.io/api/python,django,sublimetext
+
+
+his3.txt
