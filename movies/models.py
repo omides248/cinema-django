@@ -24,7 +24,7 @@ class Picture(models.Model):
 	name 					= models.CharField(verbose_name=_("name"), max_length=128)
 	image 					= models.ImageField(verbose_name=_("image"), upload_to='img_movies/', null=True, blank=True)
 	timestamp				= jmodels.jDateTimeField(verbose_name=_("timestamp"))
-	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE)
+	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE, verbose_name=_("movie"))
 
 	def __str__(self):
 		return self.name
