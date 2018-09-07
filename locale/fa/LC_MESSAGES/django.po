@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-07 18:22+0430\n"
+"POT-Creation-Date: 2018-09-07 20:10+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,15 +30,24 @@ msgstr "شماره تراکنش"
 msgid "payment_datetime"
 msgstr "زمان پرداخت"
 
-#: customers/models.py:17 screening/models.py:24
+#: customers/models.py:17 screening/models.py:28
 msgid "price"
 msgstr "قیمت"
 
-#: customers/models.py:18
+#: customers/models.py:18 screening/models.py:14
 msgid "status"
 msgstr "وضعیت"
 
-#: customers/models.py:28
+#: customers/models.py:19 movies/models.py:27 movies/models.py:41
+#: movies/models.py:73 screening/models.py:57
+msgid "movie"
+msgstr "فیلم"
+
+#: customers/models.py:20 screening/models.py:31 screening/models.py:64
+msgid "cinema"
+msgstr "سینما"
+
+#: customers/models.py:28 screening/models.py:15
 msgid "order"
 msgstr "سفارش"
 
@@ -50,141 +59,139 @@ msgstr "سفارشات"
 msgid "gener"
 msgstr "ژانر"
 
-#: movies/models.py:20
+#: movies/models.py:19
 #, fuzzy
 #| msgid "genres"
 msgid "genre"
 msgstr "ژانرها"
 
-#: movies/models.py:21 movies/models.py:64
+#: movies/models.py:20 movies/models.py:63
 msgid "genres"
 msgstr "ژانرها"
 
-#: movies/models.py:25 movies/models.py:39 movies/models.py:54
-#: movies/models.py:79 screening/models.py:9 screening/models.py:23
-#: screening/models.py:38 screening/models.py:49
+#: movies/models.py:24 movies/models.py:38 movies/models.py:53
+#: movies/models.py:78 screening/models.py:13 screening/models.py:27
+#: screening/models.py:42 screening/models.py:53
 msgid "name"
 msgstr "نام"
 
-#: movies/models.py:26
+#: movies/models.py:25
 msgid "image"
 msgstr "عکس"
 
-#: movies/models.py:27 movies/models.py:41 movies/models.py:63
+#: movies/models.py:26 movies/models.py:40 movies/models.py:62
 msgid "timestamp"
 msgstr "زمان"
 
-#: movies/models.py:34
+#: movies/models.py:33
 msgid "picture"
 msgstr "عکس"
 
-#: movies/models.py:35
+#: movies/models.py:34
 msgid "pictures"
 msgstr "عکس ها"
 
-#: movies/models.py:40 movies/models.py:56
+#: movies/models.py:39 movies/models.py:55
 msgid "description"
 msgstr "توضیحات"
 
-#: movies/models.py:48
+#: movies/models.py:47
 msgid "commet"
 msgstr "دیدگاه"
 
-#: movies/models.py:49
+#: movies/models.py:48
 msgid "commets"
 msgstr "دیدگاه ها"
 
-#: movies/models.py:55
+#: movies/models.py:54
 msgid "slug"
 msgstr ""
 
-#: movies/models.py:57
+#: movies/models.py:56
 msgid "length"
 msgstr "طول فیلم"
 
-#: movies/models.py:58 movies/models.py:65
+#: movies/models.py:57 movies/models.py:64
 msgid "director"
 msgstr "کارگردان"
 
-#: movies/models.py:59 movies/models.py:66
+#: movies/models.py:58 movies/models.py:65
 msgid "producer"
 msgstr "تهیه کننده"
 
-#: movies/models.py:60
+#: movies/models.py:59
 msgid "actor"
 msgstr "بازیگران"
 
-#: movies/models.py:61 movies/models.py:67
+#: movies/models.py:60 movies/models.py:66
 msgid "writer"
 msgstr "نویسنده"
 
-#: movies/models.py:62
+#: movies/models.py:61
 msgid "release_date"
 msgstr "زمان اکران"
 
 #: movies/models.py:74
-msgid "movie"
-msgstr "فیلم"
-
-#: movies/models.py:75
 msgid "movies"
 msgstr "فیلم ها"
 
-#: movies/models.py:86
+#: movies/models.py:85
 msgid "people"
 msgstr "اعضای فیلم"
 
-#: movies/models.py:87
+#: movies/models.py:86
 msgid "peoples"
 msgstr "اعضای فیلم"
 
-#: screening/models.py:18
-msgid "chair"
-msgstr "صندلی"
+#: screening/models.py:8
+msgid "Not reserved chair"
+msgstr "صندلی هنوز رزرو نشده"
 
-#: screening/models.py:19
-msgid "chairs"
-msgstr "صندلی ها"
+#: screening/models.py:9
+msgid "Reserved"
+msgstr "صندلی رزرو شده"
 
-#: screening/models.py:25
-#, fuzzy
-#| msgid "time_screening"
-msgid "time_screening"
-msgstr "زمان سانس"
-
-#: screening/models.py:33
+#: screening/models.py:16 screening/models.py:37
 msgid "screening"
 msgstr "سانس"
 
-#: screening/models.py:34
-msgid "screenings"
-msgstr "سانس ها"
+#: screening/models.py:22
+msgid "chair"
+msgstr "صندلی"
 
-#: screening/models.py:44
+#: screening/models.py:23
+msgid "chairs"
+msgstr "صندلی ها"
+
+#: screening/models.py:29
+msgid "time_screening"
+msgstr "زمان سانس"
+
+#: screening/models.py:30 screening/models.py:48
 msgid "hall"
 msgstr "سالن"
 
-#: screening/models.py:45
+#: screening/models.py:38
+msgid "screenings"
+msgstr "سانس ها"
+
+#: screening/models.py:49
 msgid "halls"
 msgstr "سالن ها"
 
-#: screening/models.py:50
+#: screening/models.py:54
 msgid "city"
 msgstr "شهر"
 
-#: screening/models.py:51
+#: screening/models.py:55
 msgid "description_city"
 msgstr "آدرس"
 
-#: screening/models.py:52
+#: screening/models.py:56
 msgid "phone_number"
 msgstr "شماره تلفن"
 
-#: screening/models.py:60
-msgid "cinema"
-msgstr "سینما"
-
-#: screening/models.py:61
+#: screening/models.py:65
 msgid "cinemas"
 msgstr "سینماها"
 
