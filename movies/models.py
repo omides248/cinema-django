@@ -10,7 +10,6 @@ from screening.models import Cinema
 
 class Genre(models.Model):
 	name = models.CharField(verbose_name=_("gener"), max_length=128)
-	chair  					= models.ForeignKey("screening.Chair", on_delete=models.CASCADE)
 
 
 	def __str__(self):
@@ -39,7 +38,7 @@ class Comment(models.Model):
 	name 					= models.CharField(verbose_name=_("name"), max_length=128)
 	description 			= RichTextField(verbose_name=_("description"), max_length=255, null=True)
 	timestamp 				= jmodels.jDateTimeField(verbose_name=_("timestamp"), default=jdatetime.datetime.now)
-	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE)
+	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE, verbose_name=_("movie"))
 	# user --> AbstractUser --> phoneNumber
 	def __str__(self):
 		return self.description
