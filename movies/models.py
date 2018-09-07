@@ -10,31 +10,43 @@ from screening.models import Cinema
 
 class Genre(models.Model):
 	name = models.CharField(verbose_name=_("gener"), max_length=128)
-	chair  					= models.ForeignKey("screening.Chair", on_delete=models.CASCADE, verbose_name=_("chair"))
+	chair  					= models.ForeignKey("screening.Chair", on_delete=models.CASCADE)
 
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name=_("genre")
+		verbose_name_plural=_("genres")
 
 
 class Picture(models.Model):
 	name 					= models.CharField(verbose_name=_("name"), max_length=128)
 	image 					= models.ImageField(verbose_name=_("image"), upload_to='img_movies/', null=True, blank=True)
 	timestamp				= jmodels.jDateTimeField(verbose_name=_("timestamp"))
-	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE, verbose_name=_("movie"))
+	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE)
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name=_("picture")
+		verbose_name_plural=_("pictures")
 
 
 class Comment(models.Model):
 	name 					= models.CharField(verbose_name=_("name"), max_length=128)
 	description 			= RichTextField(verbose_name=_("description"), max_length=255, null=True)
 	timestamp 				= jmodels.jDateTimeField(verbose_name=_("timestamp"), default=jdatetime.datetime.now)
-	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE, verbose_name=_("movie"))
+	movie  					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE)
 	# user --> AbstractUser --> phoneNumber
 	def __str__(self):
 		return self.description
+
+	class Meta:
+		verbose_name=_("commet")
+		verbose_name_plural=_("commets")
 
 
 class Movie(models.Model):
@@ -50,16 +62,17 @@ class Movie(models.Model):
 	release_date		 	= jmodels.jDateField(default=jdatetime.date.today, verbose_name=_("release_date"))
 	timestamp 				= jmodels.jDateTimeField(verbose_name=_("timestamp"))
 	genres 					= models.ManyToManyField(Genre, verbose_name=_("genres"))
-	director 				= models.ForeignKey("People", verbose_name=_("director"), on_delete=models.CASCADE,
-								 related_name="movie_director")
-	producer 				= models.ForeignKey("People", verbose_name=_("producer"), on_delete=models.CASCADE,
-								 related_name="movie_producer")
-	writer 					= models.ForeignKey("People", verbose_name=_("writer"), on_delete=models.CASCADE,
-							   related_name="movie_writer")
+	director 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_director")
+	producer 				= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_producer")
+	writer 					= models.ForeignKey("People", on_delete=models.CASCADE, related_name="movie_writer")
 
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name=_("movie")
+		verbose_name_plural=_("movies")
 
 
 class People(models.Model):
@@ -67,3 +80,8 @@ class People(models.Model):
 
 	def __str__(self):
 		return self.name
+
+
+	class Meta:
+		verbose_name=_("people")
+		verbose_name_plural=_("peoples")

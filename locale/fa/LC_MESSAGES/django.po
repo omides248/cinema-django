@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-03 20:04+0430\n"
+"POT-Creation-Date: 2018-09-07 17:51+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,118 +18,175 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: customers/models.py:14
+msgid "order_number"
+msgstr "شماره سفارش"
+
 #: customers/models.py:15
-msgid "number order"
-msgstr ""
+msgid "transactio_number"
+msgstr "شماره تراکنش"
 
 #: customers/models.py:16
-msgid "number transaction"
-msgstr ""
+msgid "payment_datetime"
+msgstr "زمان پرداخت"
 
-#: customers/models.py:17
-msgid "datetime_payment"
-msgstr ""
-
-#: customers/models.py:20 screening/models.py:12
+#: customers/models.py:17 screening/models.py:24
 msgid "price"
-msgstr ""
+msgstr "قیمت"
 
-#: customers/models.py:21
+#: customers/models.py:18
 msgid "status"
-msgstr ""
+msgstr "وضعیت"
 
-#: customers/models.py:25
-msgid "user"
-msgstr ""
-
-#: customers/models.py:26 screening/models.py:37
+#: customers/models.py:28
 msgid "order"
-msgstr ""
+msgstr "سفارش"
 
-#: films/models.py:11 films/models.py:28
+#: customers/models.py:29
+msgid "orders"
+msgstr "سفارشات"
+
+#: movies/models.py:12
 msgid "gener"
-msgstr ""
+msgstr "ژانر"
 
-#: films/models.py:20
-msgid "picture"
-msgstr ""
+#: movies/models.py:20
+#, fuzzy
+#| msgid "genres"
+msgid "genre"
+msgstr "ژانرها"
 
-#: films/models.py:21
-msgid "film"
-msgstr ""
+#: movies/models.py:21 movies/models.py:64
+msgid "genres"
+msgstr "ژانرها"
 
-#: films/models.py:30 films/models.py:44
-msgid "description"
-msgstr ""
-
-#: films/models.py:31 films/models.py:51
-msgid "timestamp"
-msgstr ""
-
-#: films/models.py:42 films/models.py:64 screening/models.py:11
-#: screening/models.py:19 screening/models.py:26 screening/models.py:32
+#: movies/models.py:25 movies/models.py:39 movies/models.py:54
+#: movies/models.py:79 screening/models.py:9 screening/models.py:23
+#: screening/models.py:38 screening/models.py:49
 msgid "name"
-msgstr ""
+msgstr "نام"
 
-#: films/models.py:43
+#: movies/models.py:26
+msgid "image"
+msgstr "عکس"
+
+#: movies/models.py:27 movies/models.py:41 movies/models.py:63
+msgid "timestamp"
+msgstr "زمان"
+
+#: movies/models.py:34
+msgid "picture"
+msgstr "عکس"
+
+#: movies/models.py:35
+msgid "pictures"
+msgstr "عکس ها"
+
+#: movies/models.py:40 movies/models.py:56
+msgid "description"
+msgstr "توضیحات"
+
+#: movies/models.py:48
+msgid "commet"
+msgstr "دیدگاه"
+
+#: movies/models.py:49
+msgid "commets"
+msgstr "دیدگاه ها"
+
+#: movies/models.py:55
 msgid "slug"
 msgstr ""
 
-#: films/models.py:45
+#: movies/models.py:57
 msgid "length"
-msgstr ""
+msgstr "طول فیلم"
 
-#: films/models.py:46 films/models.py:53
+#: movies/models.py:58
 msgid "director"
-msgstr ""
+msgstr "کارگردان"
 
-#: films/models.py:47 films/models.py:54
+#: movies/models.py:59
 msgid "producer"
-msgstr ""
+msgstr "تهیه کننده"
 
-#: films/models.py:48 films/models.py:55
+#: movies/models.py:60
+msgid "actor"
+msgstr "بازیگران"
+
+#: movies/models.py:61
 msgid "writer"
-msgstr ""
+msgstr "نویسنده"
 
-#: films/models.py:49
+#: movies/models.py:62
 msgid "release_date"
-msgstr ""
+msgstr "زمان اکران"
 
-#: films/models.py:50
-msgid "image"
-msgstr ""
+#: movies/models.py:74
+msgid "movie"
+msgstr "فیلم"
 
-#: films/models.py:52
-msgid "genres"
-msgstr ""
+#: movies/models.py:75
+msgid "movies"
+msgstr "فیلم ها"
 
-#: films/models.py:56
-msgid "cinema"
-msgstr ""
+#: movies/models.py:86
+msgid "people"
+msgstr "اعضای فیلم"
 
-#: screening/models.py:14
+#: movies/models.py:87
+msgid "peoples"
+msgstr "اعضای فیلم"
+
+#: screening/models.py:18
 msgid "chair"
-msgstr ""
+msgstr "صندلی"
 
-#: screening/models.py:20
-msgid "customer"
-msgstr ""
+#: screening/models.py:19
+msgid "chairs"
+msgstr "صندلی ها"
 
-#: screening/models.py:27 screening/models.py:36
-msgid "screening"
-msgstr ""
+#: screening/models.py:25
+#, fuzzy
+#| msgid "time_screening"
+msgid "time_screening"
+msgstr "زمان سانس"
 
 #: screening/models.py:33
-msgid "city"
-msgstr ""
+msgid "screening"
+msgstr "سانس"
 
 #: screening/models.py:34
-msgid "description_city"
-msgstr ""
+msgid "screenings"
+msgstr "سانس ها"
 
-#: screening/models.py:35
+#: screening/models.py:44
+msgid "hall"
+msgstr "سالن"
+
+#: screening/models.py:45
+msgid "halls"
+msgstr "سالن ها"
+
+#: screening/models.py:50
+msgid "city"
+msgstr "شهر"
+
+#: screening/models.py:51
+msgid "description_city"
+msgstr "آدرس"
+
+#: screening/models.py:52
 msgid "phone_number"
-msgstr ""
+msgstr "شماره تلفن"
+
+#: screening/models.py:60
+msgid "cinema"
+msgstr "سینما"
+
+#: screening/models.py:61
+msgid "cinemas"
+msgstr "سینماها"
 
 #: venv/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
@@ -670,7 +727,7 @@ msgstr ""
 
 #: venv/lib/python3.6/site-packages/django/forms/formsets.py:375
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: venv/lib/python3.6/site-packages/django/forms/models.py:747
 #, python-format
