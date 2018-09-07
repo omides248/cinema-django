@@ -16,8 +16,8 @@ class Order(models.Model):
 	payment_datetime 		= jmodels.jDateTimeField(default=jdatetime.datetime.now,verbose_name=_("payment_datetime"))
 	price                   = models.IntegerField(verbose_name=_("price"))
 	status                  = models.CharField(max_length=128, verbose_name=_("status"))
-	movie 					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE)
-	cinema 					= models.ForeignKey(Cinema, on_delete=models.CASCADE)
+	movie 					= models.ForeignKey("movies.Movie", on_delete=models.CASCADE, verbose_name=_("movie"))
+	cinema 					= models.ForeignKey(Cinema, on_delete=models.CASCADE, verbose_name=_("cinema"))
 
 
 	def __str__(self):
