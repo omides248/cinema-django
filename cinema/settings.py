@@ -150,6 +150,8 @@ locale.setlocale(locale.LC_ALL, "fa_IR")
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 
+# AUTH_USER_MODEL = 'customers.User'
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
