@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 
+
     # Libarary
     'ckeditor',
     'phonenumber_field',
@@ -51,9 +52,9 @@ INSTALLED_APPS = [
 
     # App custom
     'base',
-    'movies',
-    'customers',
-    'screening',
+    'movies.apps.MoviesConfig',
+    'customers.apps.CustomersConfig',
+    'screening.apps.ScreeningConfig',
 
 ]
 

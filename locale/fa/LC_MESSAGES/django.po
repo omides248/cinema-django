@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-07 20:10+0430\n"
+"POT-Creation-Date: 2018-09-08 19:30+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,42 +18,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: customers/models.py:14
+#: customers/apps.py:6
+msgid "customers"
+msgstr "مشتریان و سفارشات"
+
+#: customers/models.py:12
 msgid "order_number"
 msgstr "شماره سفارش"
 
-#: customers/models.py:15
+#: customers/models.py:13
 msgid "transactio_number"
 msgstr "شماره تراکنش"
 
-#: customers/models.py:16
+#: customers/models.py:14
 msgid "payment_datetime"
 msgstr "زمان پرداخت"
 
-#: customers/models.py:17 screening/models.py:28
+#: customers/models.py:15 screening/models.py:28
 msgid "price"
 msgstr "قیمت"
 
-#: customers/models.py:18 screening/models.py:14
+#: customers/models.py:16 screening/models.py:14
 msgid "status"
 msgstr "وضعیت"
 
-#: customers/models.py:19 movies/models.py:27 movies/models.py:41
+#: customers/models.py:17 movies/models.py:27 movies/models.py:41
 #: movies/models.py:73 screening/models.py:57
 msgid "movie"
 msgstr "فیلم"
 
-#: customers/models.py:20 screening/models.py:31 screening/models.py:64
+#: customers/models.py:18 screening/models.py:31 screening/models.py:64
 msgid "cinema"
 msgstr "سینما"
 
-#: customers/models.py:28 screening/models.py:15
+#: customers/models.py:26 screening/models.py:15
 msgid "order"
 msgstr "سفارش"
 
-#: customers/models.py:29
+#: customers/models.py:27
 msgid "orders"
 msgstr "سفارشات"
+
+#: movies/apps.py:6 movies/models.py:74
+msgid "movies"
+msgstr "فیلم ها"
 
 #: movies/models.py:12
 msgid "gener"
@@ -131,10 +139,6 @@ msgstr "نویسنده"
 msgid "release_date"
 msgstr "زمان اکران"
 
-#: movies/models.py:74
-msgid "movies"
-msgstr "فیلم ها"
-
 #: movies/models.py:85
 msgid "people"
 msgstr "اعضای فیلم"
@@ -143,6 +147,10 @@ msgstr "اعضای فیلم"
 msgid "peoples"
 msgstr "اعضای فیلم"
 
+#: screening/apps.py:6 screening/models.py:16 screening/models.py:37
+msgid "screening"
+msgstr "سانس"
+
 #: screening/models.py:8
 msgid "Not reserved chair"
 msgstr "صندلی هنوز رزرو نشده"
@@ -150,10 +158,6 @@ msgstr "صندلی هنوز رزرو نشده"
 #: screening/models.py:9
 msgid "Reserved"
 msgstr "صندلی رزرو شده"
-
-#: screening/models.py:16 screening/models.py:37
-msgid "screening"
-msgstr "سانس"
 
 #: screening/models.py:22
 msgid "chair"

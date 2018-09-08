@@ -8,8 +8,6 @@ from screening.models import Chair, Cinema
 
 
 
-
-
 class Order(models.Model):
 	order_number            = models.IntegerField(verbose_name=_("order_number"))
 	transactio_number     	= models.IntegerField(verbose_name=_("transactio_number"))
