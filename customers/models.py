@@ -1,17 +1,17 @@
 import jdatetime
 from phonenumber_field.modelfields import PhoneNumberField
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 from django_jalali.db import models as jmodels
 from django.db import models
-# from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser
 from screening.models import Chair, Cinema
 
 
 
-#
-# class User(AbstractUser):
-# 	phone_number = PhoneNumberField()
+
+class User(AbstractUser):
+	phone_number = PhoneNumberField()
 
 
 
