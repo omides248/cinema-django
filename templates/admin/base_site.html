@@ -1,0 +1,34 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block title %}{{ title }} |مدیریت سینما{% endblock %}
+
+
+{% block extrastyle %}
+    <style media="screen">
+
+        @font-face {
+            font-family: 'isans' ;
+            src: url('{% static 'fonts/isans.woff' %}') format('woff');
+            src: local('{% static 'fonts/isans.woff' %}');
+        }
+
+        body {
+
+        }
+
+        #header {
+            background-color: #d2a606;
+        }
+
+        #branding {
+            text-align: center !important;
+            /* float: none; */
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}" style="text-align:center;">مدیریت سینما</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

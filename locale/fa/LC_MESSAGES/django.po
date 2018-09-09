@@ -201,11 +201,11 @@ msgstr "سینماها"
 
 #: venv/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
-msgstr ""
+msgstr "پیام ها"
 
 #: venv/lib/python3.6/site-packages/django/contrib/sitemaps/apps.py:7
 msgid "Site Maps"
-msgstr ""
+msgstr "نقشه سایت"
 
 #: venv/lib/python3.6/site-packages/django/contrib/staticfiles/apps.py:9
 msgid "Static Files"
@@ -1382,22 +1382,22 @@ msgstr ""
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filters.py:40
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filterspecs.py:38
 msgid "Today"
-msgstr ""
+msgstr "امروز"
 
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filters.py:44
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filterspecs.py:39
 msgid "Past 7 days"
-msgstr ""
+msgstr "۷ روز گذشته"
 
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filters.py:48
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filterspecs.py:42
 msgid "This month"
-msgstr ""
+msgstr "در این ماه"
 
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filters.py:52
 #: venv/lib/python3.6/site-packages/django_jalali/admin/filterspecs.py:45
 msgid "This year"
-msgstr ""
+msgstr "در این سال"
 
 #: venv/lib/python3.6/site-packages/django_jalali/admin/widgets.py:50
 msgid "Date:"
@@ -1405,16 +1405,16 @@ msgstr ""
 
 #: venv/lib/python3.6/site-packages/django_jalali/admin/widgets.py:50
 msgid "Time:"
-msgstr ""
+msgstr "زمان"
 
 #: venv/lib/python3.6/site-packages/django_jalali/db/models.py:48
 msgid "Enter a valid date in YYYY-MM-DD format."
-msgstr ""
+msgstr "تاریخ را به فرمت معتبر YYY-MM-DD وارد کنید"
 
 #: venv/lib/python3.6/site-packages/django_jalali/db/models.py:49
 #, python-format
 msgid "Invalid date: %s"
-msgstr ""
+msgstr "داده معتبر نیست"
 
 #: venv/lib/python3.6/site-packages/django_jalali/db/models.py:186
 msgid "Enter a valid date/time in YYYY-MM-DD HH:MM[:ss[.uuuuuu]] format."
