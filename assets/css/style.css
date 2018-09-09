@@ -6,3 +6,15 @@ body {
     font-family: 'isans' ;
     src: url('../fonts/isans.woff') format('woff');
 }
+.card-title {
+	text-align: center;
+	color: red;
+}
+
+.btn-text {
+	text-align: center;
+}
+
+.b {
+	background-color:red !important;
+}

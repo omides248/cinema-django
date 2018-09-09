@@ -3,7 +3,7 @@ from django.views import View
 
 class IndexView(View):
 
-	template_name = 'base/index.html'
+	template_name = 'index.html'
 
 	def get(self, request, *args, **kwargs):
 		return render(request, self.template_name, {})
