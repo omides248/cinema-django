@@ -166,5 +166,5 @@ films/migrations
 base/migrations
 # End of https://www.gitignore.io/api/python,django,sublimetext
 
-
+.idea
 his3.txt
