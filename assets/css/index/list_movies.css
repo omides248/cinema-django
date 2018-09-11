@@ -1,0 +1,92 @@
+/* List Movie Style*/
+.card-title {
+	text-align: center;
+}
+
+.btn-text {
+	text-align: center;
+}
+
+.b {
+	background-color:red !important;
+}
+
+.main-movie {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	background: #FFF;
+	/* border: 3px solid #e0b228; */
+	border-top: 3px solid #e0b228;
+}
+
+.card-movie {
+	margin: 10px;
+	/*position: relative;*/
+	padding:5px;
+	background-color: ghostwhite;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+}
+
+.card-movie:hover {
+	border: 2px solid #28a745;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.26);
+}
+
+.release-date {
+
+	text-align: center;
+	bottom: 15px;
+	right: 39px;
+	color: black;
+	font-size: 12px;
+	background: #fff;
+	border-radius: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
+}
+
+.icon-release-date {
+	font-size: 18px !important;
+}
+
+.release-date i {
+	vertical-align: -4px;
+	margin-left: 3px;
+	color: #6962d1;
+}
+
+
+.btn-custom {
+	padding: .3rem .6rem !important;
+}
+
+#span-alert-custom {
+	padding: 4px;
+
+text-align: center;
+
+margin-top: 5px;
+
+border: 1px solid #d7d7d76e;
+background-color: #FFF;
+}
+
+#h2-head-movie {
+	text-align: center;
+    padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#line {
+	border-right: 3px solid #e0b228;
+    border-bottom: 3px solid #e0b228;
+    border-left: 3px solid #e0b228;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.producer-name-movie {
+	font-size: 12px;
+	text-align: center;
+}
