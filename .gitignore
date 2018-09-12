@@ -168,3 +168,4 @@ base/migrations
 
 .idea
 his3.txt
+node_modules/*

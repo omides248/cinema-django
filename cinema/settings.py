@@ -130,6 +130,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+ALLOWED_HOSTS = ['*']
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -162,3 +165,5 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "static_root")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "media_root")
+
+
