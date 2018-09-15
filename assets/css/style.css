@@ -1,7 +1,11 @@
 @import 'index/list_movies.css';
 @import 'common/navbar.css';
+@import 'index/sidebar.css';
+@import 'common/footer.css';
 {% load static %}
 
+
+/* Common */
 body {
 	
 	background: url('../img/background_image.png') repeat;
@@ -21,185 +25,11 @@ ul, li {
        /*local('woff');*/
 /*}*/
 
-/* Common */
+
  .margin-top {
  	margin-top: 10px;
  }
 
 #margin-filter-movie {
 	vertical-align: 6px;
-}
-
-
-/* Sidebar List */
-#main-side-bar {
-	background-color: #fff;
-	text-align: center;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-	padding: 0 21px;
-}
-
-#side-bar-title {
-	font-size: ;
-	color: black;
-	padding-top: 10px;
-	border-bottom: 3px solid #e0b228;
-	border-radius: 5px;
-	padding-bottom: 8px;
-	font-style: normal;
-	font-weight: normal;
-	text-align: center;
-
-font-size: 24px;
-
-font-style: normal;
-
-font-weight: normal;
-}
-
-.main-style {
-	background-color: #fff;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-	margin-bottom: 20px;
-}
-
-.movie-best-sellers {
-	padding: 10px 30px 0px 10px;
-	font-size: 18px;
-}
-
-.movie-best-list li {
-	position: relative;
-	margin-bottom: 12px;
-}
-
-.movie-best-list {
-	padding-bottom: 14px;
-}
-
-.movie-name {
-	position: absolute;
-	top: 7px;
-	right: 65px;
-}
-
-.movie-name a {
-	color: midnightblue;
-}
-
-.list-icon {
-	text-align: center;
-	display: inline-block;
-	color: #aaa;
-	background-color: #fff;
-	width: 40px;
-	height: 40px;
-	border-radius: 50px;
-	box-shadow: 0 0 10px rgb(255, 214, 37);
-	transition: .5s;
-
-}
-
-.list-icon p {
-	font-size: 32px;
-	color: black;
-	font-weight: bold;
-}
-
-/* EEEEERRRRROOORRRRR  1 */
-.movie-list{
-	}
-/* EEEEERRRRROOORRRRR  1 */
-.movie-best-list li:hover li {
-	background-color: beige;
-}
-
-.movie-best-list li:hover .list-icon {
-	background-color: rgb(255, 214, 37);
-	box-shadow: 0 0 0px 3px rgb(255, 214, 37);
-	-moz-box-shadow: 0 0 0px 3px rgb(255, 214, 37);
-	-webkit-box-shadow: 0 0 0px 3px rgb(255, 214, 37);
-}
-
-.movie-best-list li {
-	background-color: beige;
-	border-radius: 0px 17px 37px 48px;
-}
-
-.fix-number {
-	width: 32px;
-	height: 25px;
-	margin-top: 6px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer style */
-
-#main-footer {
-	background-color: #303033;
-	color: #fff;
-	width: 100%;
-}
-
-#line-footer {
-	border-top: 1px solid #fff;
-	margin: 0px 15px;
-}
-
-#footer-p {
-	margin: 10px 0;
-    text-align: center;
-}
-
-.footer-ul {
-	margin: 25px 0;
-}
-
-.footer-ul li{
-	list-style-type: none;
-	margin: 5px 0;
-	border-right: 4px solid #a2a09a;
-	padding-right: 7px;
-	border-radius: 4px;
-}
-
-.footer-ul li a {
-	color: #fff;
-}
-
-.footer-padding-right {
-	padding-right: 89px	
-}
-
-#footer-enamad {
-	margin: 0 25%;
-	padding: 12px 0;
-}
-
-#footer-padding-top {
-	padding: 10px 0;
-}
-
-@media screen and (max-width: 540px) {
-  #footer-enamad {  margin: 0 0; }
-}
-
-
-@media screen and (max-width: 720px) {
-  #footer-enamad {  margin: 0 0; }
 }
