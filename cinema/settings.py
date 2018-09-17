@@ -47,11 +47,13 @@ INSTALLED_APPS = [
     'ckeditor',
     'phonenumber_field',
     'django_jalali',
+    'crispy_forms',
 
 
 
     # App custom
     'base',
+    'login_register',
     'movies.apps.MoviesConfig',
     'customers.apps.CustomersConfig',
     'screening.apps.ScreeningConfig',
@@ -152,6 +154,7 @@ locale.setlocale(locale.LC_ALL, "fa_IR")
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 AUTH_USER_MODEL = 'customers.User'
 
@@ -165,5 +168,3 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "static_root")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "cinema/static_assets", "media_root")
-
-

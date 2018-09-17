@@ -9,6 +9,10 @@
 body {
 	
 	background: url('../img/background_image.png') repeat;
+
+
+		padding:100px 0;
+		background-color:#efefef;
 }
 
 ul, li {
@@ -36,7 +40,9 @@ ul, li {
 
 
 
-
+a, a:hover{
+	color:#333;
+  }
 
 /* list cinema */
 
