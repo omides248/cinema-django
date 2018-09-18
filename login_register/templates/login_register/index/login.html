@@ -6,10 +6,10 @@
             <div class="row">
                 <div class="col-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="card">
-                        <div class="card-header"> ورود</div>
+                        <div class="card-header" id="register-form-title"> ورود</div>
                         <div class="card-body">
 
-                            <div class="input-group mb-3 form-width" id="show_hide_password">
+                            <div class="input-group mb-3 form-width">
 
                                 {% crispy register_form %}
 
@@ -19,10 +19,10 @@
                 </div>
                 <div class="col-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="card">
-                        <div class="card-header">عضویت</div>
+                        <div class="card-header" id="login-form-title">عضویت</div>
                         <div class="card-body">
 
-                            <div class="input-group mb-3 form-width" id="show_hide_password">
+                            <div class="input-group mb-3 form-width">
 
                                 {% crispy login_form %}
 

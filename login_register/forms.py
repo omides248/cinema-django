@@ -11,11 +11,11 @@ from crispy_forms.bootstrap import AppendedText, PrependedText, FormActions
 
 class RegisterForm(forms.Form):
 
-    first_name = forms.CharField()
-    last_name = forms.CharField()
-    phone_number = PhoneNumberField()
-    email = forms.EmailField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    first_name = forms.CharField(label=_('first name'))
+    last_name = forms.CharField(label=_('last name'))
+    phone_number = PhoneNumberField(label=_('phone_number'))
+    email = forms.EmailField(label=_('email'))
+    password = forms.CharField(widget=forms.PasswordInput, label=_('password'))
 
 
 
@@ -23,13 +23,13 @@ class RegisterForm(forms.Form):
     helper.form_class = 'form-vertical'
 
     helper.layout = Layout(
-        Field('first_name', placeholder=_("firstName_RegisterForm_placeholder")),
-        Field('last_name', placeholder=_("lastName_RegisterForm_placehodler")),
-        Field('phone_number', placeholder=_("phoneNumber_RegisterForm_placehodler")),
-        Field('email', placeholder=_("email_RegisterForm_placeholder")),
+        Field('first_name', placeholder=_("Enter your first name")),
+        Field('last_name', placeholder=_("Enter your last name")),
+        Field('phone_number', placeholder=_("Enter your phone number")),
+        Field('email', placeholder=_("Enter your email address")),
 
-        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("password_RegisterForm_placeholder"), id="basic-addon1"),
-        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("password_RegisterForm_placeholder"), id="basic-addon1"),
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("Enter your password"), id="basic-addon1"),
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("Enter your repeat password"), id="basic-addon1"),
         FormActions(
             Submit('register_form', _('Register'), css_class="btn-success"),
         )
@@ -40,16 +40,16 @@ class RegisterForm(forms.Form):
 
 class LoginForm(forms.Form):
 
-    email = forms.EmailField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    email = forms.EmailField(label=_('email'))
+    password = forms.CharField(widget=forms.PasswordInput, label=_('password'))
 
     helper = FormHelper()
     helper.form_class = 'form-vertical'
 
     helper.layout = Layout(
-        Field('email'),
+        Field('email', placeholder=_("Enter your email address")),
 
-        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>'),
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_('Enter your password')),
 
         FormActions(
         Submit('login_form', _("Login"), css_class="btn-success")

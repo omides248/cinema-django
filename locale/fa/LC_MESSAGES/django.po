@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-18 10:34+0430\n"
+"POT-Creation-Date: 2018-09-19 01:36+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,6 +58,60 @@ msgstr "سفارش"
 #: customers/models.py:35
 msgid "orders"
 msgstr "سفارشات"
+
+#: login_register/forms.py:14
+msgid "first name"
+msgstr "نام"
+
+#: login_register/forms.py:15
+#, fuzzy
+#| msgid "name"
+msgid "last name"
+msgstr "نام خانوادگی"
+
+#: login_register/forms.py:16 screening/models.py:56
+msgid "phone_number"
+msgstr "شماره همراه"
+
+#: login_register/forms.py:17 login_register/forms.py:43
+msgid "email"
+msgstr "ایمیل"
+
+#: login_register/forms.py:18 login_register/forms.py:44
+msgid "password"
+msgstr "پسورد"
+
+#: login_register/forms.py:26
+msgid "Enter your first name"
+msgstr "نام خود را وارد نمایید"
+
+#: login_register/forms.py:27
+msgid "Enter your last name"
+msgstr "نام خانوادگی خود را وارد نمایید"
+
+#: login_register/forms.py:28
+msgid "Enter your phone number"
+msgstr "شماره همراه خود را وارد نمایید"
+
+#: login_register/forms.py:29 login_register/forms.py:50
+msgid "Enter your email address"
+msgstr "ایمیل خود را وارد نمایید"
+
+#: login_register/forms.py:31 login_register/forms.py:52
+msgid "Enter your password"
+msgstr "پسورد خود را وارد نمایید"
+
+#: login_register/forms.py:32
+msgid "Enter your repeat password"
+msgstr "پسورد خود را دوباره وارد نمایید"
+
+#: login_register/forms.py:34
+msgid "Register"
+msgstr "ثبت نام"
+
+#: login_register/forms.py:55
+msgid "Login"
+msgstr "ورود"
 
 #: movies/apps.py:6 movies/models.py:74
 msgid "movies"
@@ -113,7 +167,7 @@ msgstr "دیدگاه ها"
 
 #: movies/models.py:54
 msgid "slug"
-msgstr ""
+msgstr "اسلاگ"
 
 #: movies/models.py:56
 msgid "length"
@@ -191,10 +245,6 @@ msgstr "شهر"
 msgid "description_city"
 msgstr "آدرس"
 
-#: screening/models.py:56
-msgid "phone_number"
-msgstr "شماره تلفن"
-
 #: screening/models.py:65
 msgid "cinemas"
 msgstr "سینماها"
@@ -203,7 +253,7 @@ msgstr "سینماها"
 #: venv/lib/python3.6/site-packages/crispy_forms/tests/test_form_helper.py:150
 #: venv/lib/python3.6/site-packages/django/forms/fields.py:52
 msgid "This field is required."
-msgstr ""
+msgstr "این فیلد اجباری است."
 
 #: venv/lib/python3.6/site-packages/crispy_forms/tests/test_layout.py:355
 msgid "i18n text"
@@ -216,7 +266,7 @@ msgstr ""
 #: venv/lib/python3.6/site-packages/crispy_forms/tests/test_layout_objects.py:127
 #: venv/lib/python3.6/site-packages/django/core/validators.py:31
 msgid "Enter a valid value."
-msgstr ""
+msgstr "یک مقدار معتبر وارد نمایید."
 
 #: venv/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
@@ -1425,7 +1475,7 @@ msgstr "تاریخ را به فرمت معتبر YYY-MM-DD وارد کنید"
 #: venv/lib/python3.6/site-packages/django_jalali/db/models.py:49
 #, python-format
 msgid "Invalid date: %s"
-msgstr "داده معتبر نیست"
+msgstr ""
 
 #: venv/lib/python3.6/site-packages/django_jalali/db/models.py:186
 msgid "Enter a valid date/time in YYYY-MM-DD HH:MM[:ss[.uuuuuu]] format."
