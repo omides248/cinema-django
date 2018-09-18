@@ -2,7 +2,7 @@
 @import 'common/navbar.css';
 @import 'index/sidebar.css';
 @import 'common/footer.css';
-@import 'index/list/cinema';
+@import 'index/list_cinema.css';
 {% load static %}
 
 
@@ -12,7 +12,7 @@ body {
 	background: url('../img/background_image.png') repeat;
 
 
-		padding:100px 0;
+		padding: 0;
 		background-color:#efefef;
 }
 
