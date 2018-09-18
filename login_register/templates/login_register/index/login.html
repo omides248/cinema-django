@@ -46,16 +46,16 @@
 
 <script>
 $(document).ready(function() {
-    $("#show_hide_password a").on('click', function(event) {
+    $("#div_id_password a").on('click', function(event) {
         event.preventDefault();
-        if($('#show_hide_password input').attr("type") == "text"){
-            $('#show_hide_password input').attr('type', 'password');
-            $('#show_hide_password i').addClass( "fa-eye-slash" );
-            $('#show_hide_password i').removeClass( "fa-eye" );
-        }else if($('#show_hide_password input').attr("type") == "password"){
-            $('#show_hide_password input').attr('type', 'text');
-            $('#show_hide_password i').removeClass( "fa-eye-slash" );
-            $('#show_hide_password i').addClass( "fa-eye" );
+        if($('#div_id_password input').attr("type") == "text"){
+            $('#div_id_password input').attr('type', 'password');
+            $('#div_id_password i').addClass( "fa-eye-slash" );
+            $('#div_id_password i').removeClass( "fa-eye" );
+        }else if($('#div_id_password input').attr("type") == "password"){
+            $('#div_id_password input').attr('type', 'text');
+            $('#div_id_password i').removeClass( "fa-eye-slash" );
+            $('#div_id_password i').addClass( "fa-eye" );
         }
     });
 });
