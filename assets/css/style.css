@@ -2,12 +2,13 @@
 @import 'common/navbar.css';
 @import 'index/sidebar.css';
 @import 'common/footer.css';
+@import 'index/list/cinema';
 {% load static %}
 
 
 /* Common */
 body {
-	
+
 	background: url('../img/background_image.png') repeat;
 
 
@@ -39,86 +40,8 @@ ul, li {
 }
 
 
+/* page login and register */
 
 a, a:hover{
 	color:#333;
   }
-
-/* list cinema */
-
-.Square{
-	z-index: 0;
-	height: 180px; /* as the half of the width */
-	background-color: #0c3d35;
-	border-bottom: 0;
-	text-align: center;
-	border-radius: 0 0 35px 35px;
-}
-
-.half-circle{
-	z-index: 1;
-	margin: 0 0 0 -90px;
-	position: absolute;
-	left: 50%;
-	width: 180px;
-	height: 90px; /* as the half of the width */
-	background-color: #83db72;
-	border-bottom-left-radius: 180px;  /* 100px of height + 10px of border */
-	border-bottom-right-radius: 180px; /* 100px of height + 10px of border */
-	border-bottom: 0;
-	text-align: center;
-}
-
-
-.circle{
-
-	background-image: url("../img/cinema.jpg");
-border: 10px solid rgba(0, 0, 0, 0.53);
-
-top: 0;
-
-margin: -67px 0 0 0px;
-
-
-left: -15%;
-
-z-index: 2;
-
-width: 125px;
-
-height: 125px;
-
-border-radius: 50%;
-
-background-color: #0c3d35;
-
-text-align: center;
-}
-
-
-.img-circle {
-
--webkit-background-size: cover;
-
--moz-background-size: cover;
-
--o-background-size: cover;
-
-background-size: cover;
-}
-
-
-.address-cinema {
-	padding-top: 110px;
-	color: whitesmoke;
-	padding-bottom: 5px;
-}
-
-
-.name-cinema {
-	color: black;
-}
-
-.link-cinema {
-	text-decoration-color: white;
-}
