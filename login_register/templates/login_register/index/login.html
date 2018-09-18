@@ -4,27 +4,34 @@
     <div class="row">
         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
             <div class="row">
-                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="card-header" id="register-form-title"> ورود</div>
-                        <div class="card-body">
-
-                            <div class="input-group mb-3 form-width">
-
-                                {% crispy register_form %}
-
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="card-header" id="login-form-title">عضویت</div>
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 margin-top-35">
+                    <div class="card border-success">
+                        <div class="card-header bg-success" id="register-form-title">ورود به پنل کاربری</div>
                         <div class="card-body">
 
                             <div class="input-group mb-3 form-width">
 
                                 {% crispy login_form %}
+
+                                </div>
+                            </div>
+
+                            <div class="google-login">
+                                <a href="#">
+                                    <span class="goole-plus-btn">ورود از طریق اکانت گوگل </span>
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 margin-top-35">
+                    <div class="card border-info">
+                        <div class="card-header bg-info" id="login-form-title">فرم ثبت نام در سایت</div>
+                        <div class="card-body">
+
+                            <div class="input-group mb-3 form-width">
+
+                                {% crispy register_form %}
 
                                 </div>
                             </div>

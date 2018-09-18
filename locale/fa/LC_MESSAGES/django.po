@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-19 01:36+0430\n"
+"POT-Creation-Date: 2018-09-19 03:17+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,43 +73,51 @@ msgstr "نام خانوادگی"
 msgid "phone_number"
 msgstr "شماره همراه"
 
-#: login_register/forms.py:17 login_register/forms.py:43
+#: login_register/forms.py:17 login_register/forms.py:44
 msgid "email"
 msgstr "ایمیل"
 
-#: login_register/forms.py:18 login_register/forms.py:44
+#: login_register/forms.py:18 login_register/forms.py:45
 msgid "password"
 msgstr "پسورد"
 
-#: login_register/forms.py:26
+#: login_register/forms.py:19
+msgid "password_reapet"
+msgstr "تکرار پسورد"
+
+#: login_register/forms.py:27
 msgid "Enter your first name"
 msgstr "نام خود را وارد نمایید"
 
-#: login_register/forms.py:27
+#: login_register/forms.py:28
 msgid "Enter your last name"
 msgstr "نام خانوادگی خود را وارد نمایید"
 
-#: login_register/forms.py:28
+#: login_register/forms.py:29
 msgid "Enter your phone number"
 msgstr "شماره همراه خود را وارد نمایید"
 
-#: login_register/forms.py:29 login_register/forms.py:50
+#: login_register/forms.py:30 login_register/forms.py:52
 msgid "Enter your email address"
 msgstr "ایمیل خود را وارد نمایید"
 
-#: login_register/forms.py:31 login_register/forms.py:52
+#: login_register/forms.py:32 login_register/forms.py:54
 msgid "Enter your password"
 msgstr "پسورد خود را وارد نمایید"
 
-#: login_register/forms.py:32
+#: login_register/forms.py:33
 msgid "Enter your repeat password"
 msgstr "پسورد خود را دوباره وارد نمایید"
 
-#: login_register/forms.py:34
+#: login_register/forms.py:35
 msgid "Register"
 msgstr "ثبت نام"
 
-#: login_register/forms.py:55
+#: login_register/forms.py:46
+msgid "checkbox remember"
+msgstr "مرا به خاطر بسپار"
+
+#: login_register/forms.py:59
 msgid "Login"
 msgstr "ورود"
 

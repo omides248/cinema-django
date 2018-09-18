@@ -51,12 +51,39 @@ a, a:hover{
 	width: 100%;
 }
 
+.margin-top-35 {
+	margin-bottom: 35px;
+}
+
 
 #register-form-title {
 	text-align: center;
+	color: #fff;
 }
 
 
 #login-form-title {
+	text-align: center;
+	color:#fff;
+}
+
+#div_id_checkbox_remember span {
+	display: none;
+}
+
+#submit-id-login_form {
+	width: 125px;
+}
+
+#submit-id-register_form {
+	width: 125px;
+}
+
+#forget-password {
+	color: red;
+}
+
+#title-forget-password {
+	padding-top: 35px;
 	text-align: center;
 }
