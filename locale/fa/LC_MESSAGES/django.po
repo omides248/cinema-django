@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-08 19:30+0430\n"
+"POT-Creation-Date: 2018-09-18 10:34+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,40 +22,40 @@ msgstr ""
 msgid "customers"
 msgstr "مشتریان و سفارشات"
 
-#: customers/models.py:12
+#: customers/models.py:20
 msgid "order_number"
 msgstr "شماره سفارش"
 
-#: customers/models.py:13
+#: customers/models.py:21
 msgid "transactio_number"
 msgstr "شماره تراکنش"
 
-#: customers/models.py:14
+#: customers/models.py:22
 msgid "payment_datetime"
 msgstr "زمان پرداخت"
 
-#: customers/models.py:15 screening/models.py:28
+#: customers/models.py:23 screening/models.py:28
 msgid "price"
 msgstr "قیمت"
 
-#: customers/models.py:16 screening/models.py:14
+#: customers/models.py:24 screening/models.py:14
 msgid "status"
 msgstr "وضعیت"
 
-#: customers/models.py:17 movies/models.py:27 movies/models.py:41
+#: customers/models.py:25 movies/models.py:27 movies/models.py:41
 #: movies/models.py:73 screening/models.py:57
 msgid "movie"
 msgstr "فیلم"
 
-#: customers/models.py:18 screening/models.py:31 screening/models.py:64
+#: customers/models.py:26 screening/models.py:31 screening/models.py:64
 msgid "cinema"
 msgstr "سینما"
 
-#: customers/models.py:26 screening/models.py:15
+#: customers/models.py:34 screening/models.py:15
 msgid "order"
 msgstr "سفارش"
 
-#: customers/models.py:27
+#: customers/models.py:35
 msgid "orders"
 msgstr "سفارشات"
 
@@ -199,6 +199,25 @@ msgstr "شماره تلفن"
 msgid "cinemas"
 msgstr "سینماها"
 
+#: venv/lib/python3.6/site-packages/crispy_forms/tests/test_form_helper.py:140
+#: venv/lib/python3.6/site-packages/crispy_forms/tests/test_form_helper.py:150
+#: venv/lib/python3.6/site-packages/django/forms/fields.py:52
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.6/site-packages/crispy_forms/tests/test_layout.py:355
+msgid "i18n text"
+msgstr ""
+
+#: venv/lib/python3.6/site-packages/crispy_forms/tests/test_layout.py:357
+msgid "i18n legend"
+msgstr ""
+
+#: venv/lib/python3.6/site-packages/crispy_forms/tests/test_layout_objects.py:127
+#: venv/lib/python3.6/site-packages/django/core/validators.py:31
+msgid "Enter a valid value."
+msgstr ""
+
 #: venv/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
 msgstr "پیام ها"
@@ -225,10 +244,6 @@ msgstr ""
 
 #: venv/lib/python3.6/site-packages/django/core/paginator.py:49
 msgid "That page contains no results"
-msgstr ""
-
-#: venv/lib/python3.6/site-packages/django/core/validators.py:31
-msgid "Enter a valid value."
 msgstr ""
 
 #: venv/lib/python3.6/site-packages/django/core/validators.py:102
@@ -617,10 +632,6 @@ msgstr ""
 #. characters will prevent the default label_suffix to be appended to the label
 #: venv/lib/python3.6/site-packages/django/forms/boundfield.py:146
 msgid ":?.!"
-msgstr ""
-
-#: venv/lib/python3.6/site-packages/django/forms/fields.py:52
-msgid "This field is required."
 msgstr ""
 
 #: venv/lib/python3.6/site-packages/django/forms/fields.py:244

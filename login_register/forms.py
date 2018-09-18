@@ -2,14 +2,14 @@ from django import forms
 
 from django.utils.translation import ugettext_lazy as _
 
-from phonenumber_field.modelfields import PhoneNumberField
+from phonenumber_field.formfields import PhoneNumberField
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Div, Submit, HTML, Button, Row, Field
 from crispy_forms.bootstrap import AppendedText, PrependedText, FormActions
 
 
-class MessageForm(forms.Form):
+class RegisterForm(forms.Form):
 
     first_name = forms.CharField()
     last_name = forms.CharField()
@@ -23,13 +23,14 @@ class MessageForm(forms.Form):
     helper.form_class = 'form-vertical'
 
     helper.layout = Layout(
-        Field('first_name', placeholder="نام خود را وارد کنید"),
-        Field('last_name', placeholder="نام خانوادگی تان را وارد کنید"),
-        Field('phone_number', placeholder="شماره تلفن خود را وارد کنید"),
-        Field('email', placeholder="ایمیل خود را وارد کنید"),
+        Field('first_name', placeholder=_("firstName_RegisterForm_placeholder")),
+        Field('last_name', placeholder=_("lastName_RegisterForm_placehodler")),
+        Field('phone_number', placeholder=_("phoneNumber_RegisterForm_placehodler")),
+        Field('email', placeholder=_("email_RegisterForm_placeholder")),
 
-        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder="پسورد خود را  وارد نمایید", id="basic-addon1"),
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("password_RegisterForm_placeholder"), id="basic-addon1"),
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>', placeholder=_("password_RegisterForm_placeholder"), id="basic-addon1"),
         FormActions(
-            Submit('save_changes', 'Save changes', css_class="btn-success"),
+            Submit('register_form', _('Register'), css_class="btn-success"),
         )
     )

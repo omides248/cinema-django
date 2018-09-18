@@ -45,3 +45,8 @@ ul, li {
 a, a:hover{
 	color:#333;
   }
+
+
+.form-width form {
+	width: 100%;
+}
