@@ -34,3 +34,24 @@ class RegisterForm(forms.Form):
             Submit('register_form', _('Register'), css_class="btn-success"),
         )
     )
+
+
+
+
+class LoginForm(forms.Form):
+
+    email = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
+
+    helper = FormHelper()
+    helper.form_class = 'form-vertical'
+
+    helper.layout = Layout(
+        Field('email'),
+
+        AppendedText('password', '<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>'),
+
+        FormActions(
+        Submit('login_form', _("Login"), css_class="btn-success")
+        )
+    )
