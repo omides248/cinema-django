@@ -13,9 +13,8 @@
 
 .main-movie {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-	background: #FFF;
-	/* border: 3px solid #e0b228; */
-	border-top: 3px solid #e0b228;
+	background: #BBDEFB;
+	border-top: 3px solid #4f6389;
 	margin-bottom: 20px;
 }
 
@@ -26,10 +25,11 @@
 	background-color: ghostwhite;
 	border: 1px solid #e6e6e6;
 	border-radius: 3px;
+	border: 3px solid #5479bc;
 }
 
 .card-movie:hover {
-	border: 2px solid #28a745;
+	/* border: 2px solid #4f6389; */
 	box-shadow: 0 0 5px 0 rgba(0,0,0,.26);
 }
 
@@ -69,7 +69,7 @@ text-align: center;
 
 margin-top: 5px;
 
-border: 1px solid #d7d7d76e;
+border: 2px solid #5479bc;
 background-color: #FFF;
 }
 
@@ -77,13 +77,13 @@ background-color: #FFF;
 	text-align: center;
     padding-top: 10px;
 	padding-bottom: 5px;
+	font-size: 24px;
+	color: #4f6389;
 }
 
 #line {
-	border-right: 3px solid #e0b228;
-    border-bottom: 3px solid #e0b228;
-    border-left: 3px solid #e0b228;
-    border-radius: 0 0 10px 10px;
+	text-align: center;
+	border-bottom: 3px solid #4f6389;
 }
 
 
@@ -104,4 +104,24 @@ margin-top: 5px;
 
 #i-search-order-movie {
 	vertical-align: -3px;
+}
+
+
+#title-icon-video {
+	width: 35px;
+}
+
+
+.border-bottom-zero {
+	padding: 0;
+}
+
+.btn-movie-style {
+	background-color: #5479bc;
+
+font-size: 13px;
+
+padding-left: 15px;
+
+padding-right: 15px;
 }
