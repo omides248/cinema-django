@@ -87,3 +87,28 @@ a, a:hover{
 	padding-top: 35px;
 	text-align: center;
 }
+
+#img-google-plus {
+	width: 80px;
+	height:75px;
+	object-fit: none;
+}
+
+.google-login {
+	text-align: center;
+	border-top: 1px solid #28a745;
+	padding-top: 12px;
+}
+
+.google-login a {
+	text-decoration: none;
+}
+
+
+.google-plus-btn {
+	background-color: #ca4737;
+	color: #fff;
+	padding: 30px 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
