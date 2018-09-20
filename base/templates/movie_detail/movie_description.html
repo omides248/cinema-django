@@ -1,0 +1,35 @@
+{% load static %}
+<div class="container">
+    <div class="row" id="main-movie-detail">
+        <div class="col-lg-4 col-md-4 col-sm-4" id="img-movie-detail">
+            <div id="title-movie-detail">
+                <span id="name-movie-detail">مصادره</span>
+            </div>
+            <img src="{% static 'img/mosadere.jpg' %}" alt="">
+            <div class="btns-margin-top">
+                <button type="button" class="btn btn-info">نمایش تیزر</button>
+                <button type="button" class="btn btn-success">خرید بلیط</button>
+                <button type="button" class="btn btn-warning">دیدگاه ها</button>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8" id="movie-detail">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="tab tab-single-sidebar">
+                <ul class="nav nav-tabs" id="custom-nav-tabs">
+                    <li class="nav-item"><a href="#description" data-toggle="tab" class="nav-link active">توضیحات فیلم</a></li>
+                    <li class="nav-item"><a href="#actors" data-toggle="tab" class="nav-link">بازیگران</a></li>
+                    <li class="nav-item"><a href="#gallery" data-toggle="tab" class="nav-link">گالری</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="description">1</div>
+                    <div class="tab-pane container fade" id="actors">2</div>
+                    <div class="tab-pane container fade" id="gallery">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

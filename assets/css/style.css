@@ -3,17 +3,18 @@
 @import 'index/sidebar.css';
 @import 'common/footer.css';
 @import 'index/list_cinema.css';
+@import 'index/register_login.css';
 {% load static %}
 
 
 /* Common */
 body {
 
-	background: url('../img/background_image.png') repeat;
+	/* background: url('../img/background_image.png') repeat; */
 
 
-		padding: 0;
-		background-color:#efefef;
+	
+		background-color:#eeeeee;
 }
 
 ul, li {
@@ -41,75 +42,77 @@ ul, li {
 }
 
 
-/* page login and register */
-
-a, a:hover{
-	color:#333;
-  }
 
 
-.form-width form {
-	width: 100%;
+/* Movie detail */
+#main-movie-detail {
+	background-color: #FAFAFA;
+	padding: 10px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	border-radius: 5px 5px 5px 0px;
+	margin-bottom: 20px;
 }
 
-.margin-top-35 {
-	margin-bottom: 35px;
-}
-
-
-#register-form-title {
+#img-movie-detail {
 	text-align: center;
+	padding-left: 10px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	border: 9px solid #3f51b5;
+	padding: 10px;
+}
+
+#movie-detail {
+	
+}
+
+#name-movie-detail {
+	font-size: 35px;
 	color: #fff;
 }
 
-
-#login-form-title {
-	text-align: center;
-	color:#fff;
+#title-movie-detail {
+	background-color: #5479bc;
+	border-radius: 26px;
+	margin-bottom: 10px;
 }
 
-#div_id_checkbox_remember span {
-	display: none;
+.btns-margin-top {
+	margin-top: 8px;
 }
 
-#submit-id-login_form {
-	width: 125px;
+.tab {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 1px 1px 1px 1px #efefef;
+	border:1px solid #efefef;
+	background: #fff;
+	margin-bottom: 8px;
 }
 
-#submit-id-register_form {
-	width: 125px;
+#custom-nav-tabs {
+	border-bottom: 0 none;
 }
 
-#forget-password {
-	color: red;
+#custom-nav-tabs li {
+	margin-right: 2px;
 }
 
-#title-forget-password {
-	padding-top: 35px;
-	text-align: center;
-}
-
-#img-google-plus {
-	width: 80px;
-	height:75px;
-	object-fit: none;
-}
-
-.google-login {
-	text-align: center;
-	border-top: 1px solid #28a745;
-	padding-top: 12px;
-}
-
-.google-login a {
-	text-decoration: none;
-}
-
-
-.google-plus-btn {
-	background-color: #ca4737;
-	color: #fff;
-	padding: 30px 20px;
+#custom-nav-tabs li a {
 	font-size: 16px;
-	font-weight: bold;
+	color: #333;
+	padding: 10px;
+	border: none;
+	border-radius: 0;
+	background: #fbfbfb;
+	position: relative;
+}
+
+#custom-nav-tabs a.active a:after {
+	content: 'aaaaa';
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #03a9f4;
 }
