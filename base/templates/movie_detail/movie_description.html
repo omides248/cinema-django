@@ -7,9 +7,31 @@
             </div>
             <img src="{% static 'img/mosadere.jpg' %}" alt="">
             <div class="btns-margin-top">
-                <button type="button" class="btn btn-info">نمایش تیزر</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailerModel">نمایش تیزر</button>
                 <button type="button" class="btn btn-success">خرید بلیط</button>
-                <button type="button" class="btn btn-warning">دیدگاه ها</button>
+                <button type="button" class="btn btn-warning">نظرات</button>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="trailerModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">مصادره</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                video.js
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8" id="movie-detail">
@@ -20,16 +42,285 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="tab tab-single-sidebar">
                 <ul class="nav nav-tabs" id="custom-nav-tabs">
-                    <li class="nav-item"><a href="#description" data-toggle="tab" class="nav-link active">توضیحات فیلم</a></li>
+                    <li class="nav-item"><a href="#sans" data-toggle="tab" class="nav-link active">سالن ها و سانس ها</a></li>
+                    <li class="nav-item"><a href="#description" data-toggle="tab" class="nav-link">درباره فیلم </a></li>
                     <li class="nav-item"><a href="#actors" data-toggle="tab" class="nav-link">بازیگران</a></li>
                     <li class="nav-item"><a href="#gallery" data-toggle="tab" class="nav-link">گالری</a></li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane container active" id="description">1</div>
-                    <div class="tab-pane container fade" id="actors">2</div>
-                    <div class="tab-pane container fade" id="gallery">3</div>
+                <div class="tab-content" id="tabs-margin-top">
+                    <div class="tab-pane container active" id="sans">
+
+
+                        <div style="background-color: brown; margin: 20px;">
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        پردیس سینما مگامل
+                                    </h5>
+                                    <p>تهران - اتوبان حکیم غرب ، ستاری شمال ، جنب پیامبر مرکزی ، تلفن : ۰۲۱-۴۷۰۱ گویا</p>
+                                    <p>
+                                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1"
+                                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
+                                            first element</a>
+
+                                    </p>
+                                </div>
+
+
+
+                                <!-- Sans Detail -->
+
+
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+
+
+
+                                            <div>
+                                                <p>یکشنبه<span>۱۳۹۷/۰۷/۲</span></p>
+                                                <div style="border-top: 3px solid #124000"></div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-4">
+                                                        <div class="card" style="width: 14rem; margin:10px">
+                                                            <div class="card-body">
+
+
+                                                                <p class="card-text text-align-center">12:30</p>
+                                                                <p class="card-text text-align-center">سالن شماره ۴</p>
+                                                                <p class="card-text text-align-center">۱۶/۰۰۰ تومان</p>
+                                                                <p class="text-align-center"><button class="btn btn-success">خرید
+                                                                        بلیط</button></p>
+
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-3 col-sm-4">
+                                                            <div class="card" style="width: 14rem; margin:10px">
+                                                                <div class="card-body">
+    
+    
+                                                                    <p class="card-text text-align-center">12:30</p>
+                                                                    <p class="card-text text-align-center">سالن شماره ۴</p>
+                                                                    <p class="card-text text-align-center">۱۶/۰۰۰ تومان</p>
+                                                                    <p class="text-align-center"><button class="btn btn-success">خرید
+                                                                            بلیط</button></p>
+    
+                                                                </div>
+    
+    
+    
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3 col-md-3 col-sm-4">
+                                                                <div class="card" style="width: 14rem; margin:10px">
+                                                                    <div class="card-body">
+        
+        
+                                                                        <p class="card-text text-align-center">12:30</p>
+                                                                        <p class="card-text text-align-center">سالن شماره ۴</p>
+                                                                        <p class="card-text text-align-center">۱۶/۰۰۰ تومان</p>
+                                                                        <p class="text-align-center"><button class="btn btn-success">خرید
+                                                                                بلیط</button></p>
+        
+                                                                    </div>
+        
+        
+        
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                                    <div class="card" style="width: 14rem; margin:10px">
+                                                                        <div class="card-body">
+            
+            
+                                                                            <p class="card-text text-align-center">12:30</p>
+                                                                            <p class="card-text text-align-center">سالن شماره ۴</p>
+                                                                            <p class="card-text text-align-center">۱۶/۰۰۰ تومان</p>
+                                                                            <p class="text-align-center"><button class="btn btn-success">خرید
+                                                                                    بلیط</button></p>
+            
+                                                                        </div>
+            
+            
+            
+                                                                    </div>
+                                                                </div>
+
+                                                                 <div class="col-lg-3 col-md-3 col-sm-4">
+                                                        <div class="card" style="width: 14rem; margin:10px">
+                                                            <div class="card-body">
+
+
+                                                                <p class="card-text text-align-center">12:30</p>
+                                                                <p class="card-text text-align-center">سالن شماره ۴</p>
+                                                                <p class="card-text text-align-center">۱۶/۰۰۰ تومان</p>
+                                                                <p class="text-align-center"><button class="btn btn-success">خرید
+                                                                        بلیط</button></p>
+
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <hr>
+
+
+
+                                            <div>
+                                                <p>دوشنبه<span>۱۳۹۷/۰۷/۳</span></p>
+                                                <div style="border-top: 3px solid #124000"></div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <div style="background-color: chartreuse; margin: 20px;">
+
+
+                            <!-- Sans Detail -->
+                            <p>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+                                    aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                            </p>
+
+
+
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="card card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div class="tab-pane container fade" id="description">
+                        <p>فیلم سینمایی «یک کیلو و بیست و یک گرم» یک اثر اجتماعی است و سه قشر از طبقه فرهنگی را
+                            کارشناسی و
+                            روایت می‌کند.</p>
+                    </div>
+                    <div class="tab-pane container fade" id="actors">
+                        <p>لیلا زارع، سعید آقاخانی، فرشته صدر عرفایی، آناهیتا افشار، بابک انصاری، روشنک گرامی، مریم
+                            کاویانی، رهام مخدومی و سمیرا ذکایی</p>
+                    </div>
+
+                    <div class="tab-pane container fade" id="gallery">
+
+                        <section class="gallery-block compact-gallery">
+                            <div class="container">
+                                <div class="heading">
+                                    <!-- <h2>Compact Gallery</h2> -->
+                                </div>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_9.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_9.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                                        <a class="lightbox" href="{% static 'img/gallery/pic_movie_1.jpg' %}">
+                                            <img class="img-fluid image" src="{% static 'img/gallery/pic_movie_1.jpg' %}">
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+</script>
