@@ -267,10 +267,30 @@ ul, li {
 	border-radius: 5px;
 }
 
-.user-comment-title {
-	font-size: 13px;
+.user-comment-title ul{
+	border-bottom: 1px solid #696868;
+	padding: 6px 10px;
+	font-size: 12px;
+	color: #8e8888;
 }
 
 .vertical-align {
 	vertical-align: bottom
+}
+
+.comment-answer {
+	float: left;
+}
+
+
+.comment-edit{
+	float: left;
+}
+
+.user-comment ul li.comment-answer, ul li.comment-edit {
+	margin-left: 20px;
+}
+
+.comment-indent {
+	margin-right: 87px;
 }
