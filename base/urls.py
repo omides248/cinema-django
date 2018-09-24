@@ -4,5 +4,5 @@ from .views import IndexView, MovieDetailView
 
 urlpatterns = [
     re_path(r'^$', IndexView.as_view(), name='index'),
-    re_path(r'^movie-detail/$', MovieDetailView.as_view(), name='movie-detail')
+    re_path(r'^movie-detail/$', MovieDetailView.as_view(), name='movie-detail'),
 ]
