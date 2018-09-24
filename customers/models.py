@@ -12,7 +12,7 @@ from screening.models import Chair, Cinema
 
 class User(AbstractUser):
 	phone_number = PhoneNumberField()
-	REQUIRED_FIELDS = ['phone_number']
+	# REQUIRED_FIELDS = ['phone_number']
 
 
 

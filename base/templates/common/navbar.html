@@ -1,23 +1,30 @@
 <!-- Navbar -->
 <div id="line-nav-top">
-    <p id="nav-description-custom">هفته دفاع مقدس گرامی باد</p>
+    <p id="nav-description-custom">رزرو بلیط سینما</p>
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark" id="nav-main-custom">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="form-inline">
-            <button class="btn btn-success my-2 my-sm-0" type="submit" style="background-color: #568c4f; border-color: #fff;">جستجو</button>
-          
-                <button type="button" class="btn d-block d-xs-block d-sm-block d-md-block d-lg-none btn-nav" id="btn-register" style="border-color: #fff;padding-left: 10px;padding-right: 20px;"> ورود <span style="color: #fff;margin-right: 7px;margin-left: 7px;">|</span> عضویت</button>
-                <input class="form-control mr-sm-2" type="search" placeholder="جستجو فیلم" aria-label="Search" style="margin-right: 5px;">
-            
+
+
+
+            <!-- <button type="button" class="btn d-block d-xs-block d-sm-block d-md-block d-lg-none btn-nav-mobile float-left"
+                id="btn-register" style="border-color: #fff;padding-left: 10px;padding-right: 20px;"> ورود <span style="color: #fff;margin-right: 7px;margin-left: 7px;">|</span>
+                عضویت</button> -->
+
+            <div class="serach-container input-group">
+                <button class="btn" id="btn-search" type="submit">جستجو</button><input class="form-control"
+                    id="search-input" type="search" placeholder="جستجو فیلم" aria-label="Search" />
+            </div>
         </form>
         <ul class="navbar-nav mr-auto nav-li">
             <li class="nav-item active">
                 <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     فیلم ها
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -28,19 +35,30 @@
                     <a class="dropdown-item" href="#">اکشن</a>
                 </div>
             </li>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">سانس جدید</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">درباره ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">سانس جدید</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">درباره ما</a>
         </ul>
-        <button type="button" class="btn d-none d-xs-none d-sm-none d-md-none d-lg-block btn-nav" id="btn-register" style="border-color: #fff;"> ورود <span >|</span> عضویت</button>
+    
+            <div class="row">
+                <div style="margin:auto">
+                    <button type="button" class="btn btn-nav center-block" id="btn-register"
+                    style="border-color: #fff;"> ورود <span>|</span> عضویت</button>
+                </div>
+            </div>
+        
     </div>
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-brand" id="navbar-brand-custom" href="#">ایران گیشه</a>
 </nav>
 
 <br>
