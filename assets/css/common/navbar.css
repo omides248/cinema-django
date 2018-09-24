@@ -15,7 +15,7 @@
 }
 
 #nav-main-custom ul li > a {
-    color: #000;
+    color: #ffffff;
 }
 
 #btn-sign-in {
@@ -39,3 +39,13 @@ text-align: center;
 }
 
 
+.btn-nav {
+    background-color: #00ADB5;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+}
+
+.btn-nav:hover {
+    background-color: #457b9d;
+}
