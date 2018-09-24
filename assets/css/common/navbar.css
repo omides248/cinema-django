@@ -1,4 +1,23 @@
 /* Menu */
+
+
+#nav-main-custom {
+    background-color:#1d3557;
+    border-bottom: 1px solid #457b9d;
+}
+
+
+#line-nav-top {
+    width: 100%;
+    height: 30px;
+    background-color: #457b9d;
+    padding: 3px 0;
+}
+
+#nav-main-custom ul li > a {
+    color: #000;
+}
+
 #btn-sign-in {
 	padding-left: 22px;
     padding-right: 22px;
@@ -11,4 +30,12 @@
 	margin-right: 10px;
 
 }
+
+
+#nav-description-custom {
+    color: #ffffff;
+
+text-align: center;
+}
+
 
