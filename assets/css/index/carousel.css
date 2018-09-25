@@ -1,8 +1,4 @@
-
-
-
 /* Carousle custom */
-
 .custom-carousel-inner {
 	text-align:center;
 }
@@ -18,25 +14,60 @@
 
 
 @media (max-width: 575.98px) { 
-	
+
+	.next-icon-custom {
+        margin-left: -145px;
+    }
+
+    .prev-icon-custom {
+        margin-right: -145px;
+    }
  }
 
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .next-icon-custom {
+        margin-left: -190px;
+    }
 
+    .prev-icon-custom {
+        margin-right: -190px;
+    }
  }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .next-icon-custom {
+        margin-left: -190px;
+    }
+
+    .prev-icon-custom {
+        margin-right: -190px;
+    }
 }
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+	.next-icon-custom {
+        margin-left: -145px;
+    }
+
+    .prev-icon-custom {
+        margin-right: -145px;
+    }
 }
 
 
 @media (min-width: 1200px) {
 
+    .next-icon-custom {
+        margin-left: -145px;
+    }
+
+    .prev-icon-custom {
+        margin-right: -145px;
+    }
  }
