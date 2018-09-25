@@ -72,10 +72,6 @@ ul, li {
 	padding: 10px;
 }
 
-#movie-detail {
-
-}
-
 #name-movie-detail {
 	font-size: 35px;
 	color: #fff;
@@ -295,3 +291,35 @@ ul, li {
 .comment-indent {
 	margin-right: 87px;
 }
+
+
+
+
+
+
+/* Resposive Code */
+
+/* 
+@media (max-width: 575.98px) { 
+	
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+} */
