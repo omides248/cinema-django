@@ -95,9 +95,10 @@ text-align: center;
     }
 
     #navbar-brand-custom {
-        padding-right: 10px;
+        margin-left: 0px
        
     }
+
 }
 
 
@@ -113,12 +114,12 @@ text-align: center;
     }
 
     #navbar-brand-custom {
-        padding-right: 10px;
-        
+        margin-left: 0px
+       
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) { 
 
     .serach-container {
         margin-top: 10px;
@@ -130,7 +131,7 @@ text-align: center;
     }
 
     #navbar-brand-custom {
-        padding-right: 10px;
-    
+        margin-left: 0px
+       
     }
 }
