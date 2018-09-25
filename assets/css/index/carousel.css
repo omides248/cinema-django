@@ -12,6 +12,12 @@
 }
 
 
+.custom-carousel-indicators {
+    margin-bottom: 5px;
+}
+
+
+
 
 @media (max-width: 575.98px) { 
 
@@ -64,10 +70,10 @@
 @media (min-width: 1200px) {
 
     .next-icon-custom {
-        margin-left: -145px;
+        margin-left: -20px;
     }
 
     .prev-icon-custom {
-        margin-right: -145px;
+        margin-right: -20px;
     }
  }
